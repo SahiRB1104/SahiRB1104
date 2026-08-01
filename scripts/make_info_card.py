@@ -1,4 +1,5 @@
 import os
+import html
 
 def generate_info_card_svg(output_path="info-card.svg"):
     lines = [
@@ -14,11 +15,11 @@ def generate_info_card_svg(output_path="info-card.svg"):
         ("Portfolio", "python-phi-nine.vercel.app", "#a5d6ff"),
     ]
     
-    card_width = 410
-    card_height = 340
-    line_height = 24
-    padding_x = 16
-    padding_y = 52
+    card_width = 430
+    card_height = 370
+    line_height = 26
+    padding_x = 18
+    padding_y = 56
     
     svg = ['<?xml version="1.0" encoding="UTF-8"?>']
     svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {card_width} {card_height}" width="{card_width}" height="{card_height}">')
@@ -27,9 +28,9 @@ def generate_info_card_svg(output_path="info-card.svg"):
         .bg { fill: #0d1117; rx: 10px; ry: 10px; stroke: #30363d; stroke-width: 1px; }
         .header-dot { rx: 50%; ry: 50%; }
         .title { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; fill: #8b949e; font-weight: 600; }
-        .label { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10.5px; fill: #8b949e; font-weight: 600; }
-        .val { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10.5px; font-weight: 500; }
-        .prompt-symbol { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; fill: #7ee787; font-weight: 700; }
+        .label { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; fill: #8b949e; font-weight: 600; }
+        .val { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; font-weight: 500; }
+        .prompt-symbol { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11.5px; fill: #7ee787; font-weight: 700; }
         .line { opacity: 0; animation: lineFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
         @keyframes lineFadeIn {
             from { opacity: 0; transform: translateX(-6px); }
@@ -56,23 +57,27 @@ def generate_info_card_svg(output_path="info-card.svg"):
     # Content Lines
     svg.append(f'<g transform="translate({padding_x}, {padding_y})">')
     for idx, (label, val, val_color) in enumerate(lines):
+        # XML Escape all strings!
+        safe_label = html.escape(label)
+        safe_val = html.escape(val)
+        
         y_pos = idx * line_height
         svg.append(f'  <g class="line line-{idx}">')
         svg.append(f'    <text class="prompt-symbol" x="0" y="{y_pos}">&#10095;</text>')
-        svg.append(f'    <text class="label" x="14" y="{y_pos}">{label}:</text>')
+        svg.append(f'    <text class="label" x="14" y="{y_pos}">{safe_label}:</text>')
         # Label offset
-        label_width = len(label) * 6.6 + 20
-        svg.append(f'    <text class="val" x="{label_width}" y="{y_pos}" fill="{val_color}">{val}</text>')
+        label_width = len(label) * 6.8 + 20
+        svg.append(f'    <text class="val" x="{label_width:.1f}" y="{y_pos}" fill="{val_color}">{safe_val}</text>')
         svg.append('  </g>')
     svg.append('</g>')
     
     # Color palette bar at bottom
-    color_bar_y = card_height - 16
+    color_bar_y = card_height - 18
     palette_colors = ["#484f58", "#ff7b72", "#7ee787", "#ffa657", "#79c0ff", "#d2a8ff", "#a5d6ff", "#ffffff"]
     svg.append(f'<g transform="translate({padding_x}, {color_bar_y})">')
     for idx, color in enumerate(palette_colors):
-        x_pos = idx * 15
-        svg.append(f'  <rect x="{x_pos}" y="0" width="11" height="7" rx="2" fill="{color}" />')
+        x_pos = idx * 16
+        svg.append(f'  <rect x="{x_pos}" y="0" width="12" height="8" rx="2" fill="{color}" />')
     svg.append('</g>')
     
     svg.append('</svg>')
