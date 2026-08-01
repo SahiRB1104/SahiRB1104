@@ -27,7 +27,7 @@ def render_heatmap(json_path="data/contributions.json", output_svg="contrib-heat
     svg_width = 860
     svg_height = 200
     
-    svg = []
+    svg = ['<?xml version="1.0" encoding="UTF-8"?>']
     svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {svg_width} {svg_height}" width="{svg_width}" height="{svg_height}">')
     svg.append('<style>')
     svg.append('''
