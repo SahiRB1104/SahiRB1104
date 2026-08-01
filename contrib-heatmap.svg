@@ -1,0 +1,779 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 200" width="860" height="200">
+<style>
+
+        .bg { fill: #0d1117; rx: 10px; ry: 10px; stroke: #30363d; stroke-width: 1px; }
+        .header-dot { rx: 50%; ry: 50%; }
+        .title { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; fill: #8b949e; font-weight: 600; }
+        .stat-text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11.5px; fill: #c9d1d9; font-weight: 500; }
+        .highlight { fill: #7ee787; font-weight: 700; }
+        .legend-text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10px; fill: #8b949e; }
+        .day-box { rx: 2.5px; ry: 2.5px; opacity: 0; animation: boxPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+        @keyframes boxPop {
+            from { opacity: 0; transform: scale(0.2); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    
+  .c-0-0 { animation-delay: 0.05s; transform-origin: center; }
+  .c-0-1 { animation-delay: 0.065s; transform-origin: center; }
+  .c-0-2 { animation-delay: 0.08s; transform-origin: center; }
+  .c-0-3 { animation-delay: 0.095s; transform-origin: center; }
+  .c-0-4 { animation-delay: 0.11s; transform-origin: center; }
+  .c-0-5 { animation-delay: 0.125s; transform-origin: center; }
+  .c-0-6 { animation-delay: 0.14s; transform-origin: center; }
+  .c-1-0 { animation-delay: 0.065s; transform-origin: center; }
+  .c-1-1 { animation-delay: 0.08s; transform-origin: center; }
+  .c-1-2 { animation-delay: 0.095s; transform-origin: center; }
+  .c-1-3 { animation-delay: 0.11s; transform-origin: center; }
+  .c-1-4 { animation-delay: 0.125s; transform-origin: center; }
+  .c-1-5 { animation-delay: 0.14s; transform-origin: center; }
+  .c-1-6 { animation-delay: 0.155s; transform-origin: center; }
+  .c-2-0 { animation-delay: 0.08s; transform-origin: center; }
+  .c-2-1 { animation-delay: 0.095s; transform-origin: center; }
+  .c-2-2 { animation-delay: 0.11s; transform-origin: center; }
+  .c-2-3 { animation-delay: 0.125s; transform-origin: center; }
+  .c-2-4 { animation-delay: 0.14s; transform-origin: center; }
+  .c-2-5 { animation-delay: 0.155s; transform-origin: center; }
+  .c-2-6 { animation-delay: 0.17s; transform-origin: center; }
+  .c-3-0 { animation-delay: 0.095s; transform-origin: center; }
+  .c-3-1 { animation-delay: 0.11s; transform-origin: center; }
+  .c-3-2 { animation-delay: 0.125s; transform-origin: center; }
+  .c-3-3 { animation-delay: 0.14s; transform-origin: center; }
+  .c-3-4 { animation-delay: 0.155s; transform-origin: center; }
+  .c-3-5 { animation-delay: 0.17s; transform-origin: center; }
+  .c-3-6 { animation-delay: 0.185s; transform-origin: center; }
+  .c-4-0 { animation-delay: 0.11s; transform-origin: center; }
+  .c-4-1 { animation-delay: 0.125s; transform-origin: center; }
+  .c-4-2 { animation-delay: 0.14s; transform-origin: center; }
+  .c-4-3 { animation-delay: 0.155s; transform-origin: center; }
+  .c-4-4 { animation-delay: 0.17s; transform-origin: center; }
+  .c-4-5 { animation-delay: 0.185s; transform-origin: center; }
+  .c-4-6 { animation-delay: 0.2s; transform-origin: center; }
+  .c-5-0 { animation-delay: 0.125s; transform-origin: center; }
+  .c-5-1 { animation-delay: 0.14s; transform-origin: center; }
+  .c-5-2 { animation-delay: 0.155s; transform-origin: center; }
+  .c-5-3 { animation-delay: 0.17s; transform-origin: center; }
+  .c-5-4 { animation-delay: 0.185s; transform-origin: center; }
+  .c-5-5 { animation-delay: 0.2s; transform-origin: center; }
+  .c-5-6 { animation-delay: 0.215s; transform-origin: center; }
+  .c-6-0 { animation-delay: 0.14s; transform-origin: center; }
+  .c-6-1 { animation-delay: 0.155s; transform-origin: center; }
+  .c-6-2 { animation-delay: 0.17s; transform-origin: center; }
+  .c-6-3 { animation-delay: 0.185s; transform-origin: center; }
+  .c-6-4 { animation-delay: 0.2s; transform-origin: center; }
+  .c-6-5 { animation-delay: 0.215s; transform-origin: center; }
+  .c-6-6 { animation-delay: 0.23s; transform-origin: center; }
+  .c-7-0 { animation-delay: 0.155s; transform-origin: center; }
+  .c-7-1 { animation-delay: 0.17s; transform-origin: center; }
+  .c-7-2 { animation-delay: 0.185s; transform-origin: center; }
+  .c-7-3 { animation-delay: 0.2s; transform-origin: center; }
+  .c-7-4 { animation-delay: 0.215s; transform-origin: center; }
+  .c-7-5 { animation-delay: 0.23s; transform-origin: center; }
+  .c-7-6 { animation-delay: 0.245s; transform-origin: center; }
+  .c-8-0 { animation-delay: 0.17s; transform-origin: center; }
+  .c-8-1 { animation-delay: 0.185s; transform-origin: center; }
+  .c-8-2 { animation-delay: 0.2s; transform-origin: center; }
+  .c-8-3 { animation-delay: 0.215s; transform-origin: center; }
+  .c-8-4 { animation-delay: 0.23s; transform-origin: center; }
+  .c-8-5 { animation-delay: 0.245s; transform-origin: center; }
+  .c-8-6 { animation-delay: 0.26s; transform-origin: center; }
+  .c-9-0 { animation-delay: 0.185s; transform-origin: center; }
+  .c-9-1 { animation-delay: 0.2s; transform-origin: center; }
+  .c-9-2 { animation-delay: 0.215s; transform-origin: center; }
+  .c-9-3 { animation-delay: 0.23s; transform-origin: center; }
+  .c-9-4 { animation-delay: 0.245s; transform-origin: center; }
+  .c-9-5 { animation-delay: 0.26s; transform-origin: center; }
+  .c-9-6 { animation-delay: 0.275s; transform-origin: center; }
+  .c-10-0 { animation-delay: 0.2s; transform-origin: center; }
+  .c-10-1 { animation-delay: 0.215s; transform-origin: center; }
+  .c-10-2 { animation-delay: 0.23s; transform-origin: center; }
+  .c-10-3 { animation-delay: 0.245s; transform-origin: center; }
+  .c-10-4 { animation-delay: 0.26s; transform-origin: center; }
+  .c-10-5 { animation-delay: 0.275s; transform-origin: center; }
+  .c-10-6 { animation-delay: 0.29s; transform-origin: center; }
+  .c-11-0 { animation-delay: 0.215s; transform-origin: center; }
+  .c-11-1 { animation-delay: 0.23s; transform-origin: center; }
+  .c-11-2 { animation-delay: 0.245s; transform-origin: center; }
+  .c-11-3 { animation-delay: 0.26s; transform-origin: center; }
+  .c-11-4 { animation-delay: 0.275s; transform-origin: center; }
+  .c-11-5 { animation-delay: 0.29s; transform-origin: center; }
+  .c-11-6 { animation-delay: 0.305s; transform-origin: center; }
+  .c-12-0 { animation-delay: 0.23s; transform-origin: center; }
+  .c-12-1 { animation-delay: 0.245s; transform-origin: center; }
+  .c-12-2 { animation-delay: 0.26s; transform-origin: center; }
+  .c-12-3 { animation-delay: 0.275s; transform-origin: center; }
+  .c-12-4 { animation-delay: 0.29s; transform-origin: center; }
+  .c-12-5 { animation-delay: 0.305s; transform-origin: center; }
+  .c-12-6 { animation-delay: 0.32s; transform-origin: center; }
+  .c-13-0 { animation-delay: 0.245s; transform-origin: center; }
+  .c-13-1 { animation-delay: 0.26s; transform-origin: center; }
+  .c-13-2 { animation-delay: 0.275s; transform-origin: center; }
+  .c-13-3 { animation-delay: 0.29s; transform-origin: center; }
+  .c-13-4 { animation-delay: 0.305s; transform-origin: center; }
+  .c-13-5 { animation-delay: 0.32s; transform-origin: center; }
+  .c-13-6 { animation-delay: 0.335s; transform-origin: center; }
+  .c-14-0 { animation-delay: 0.26s; transform-origin: center; }
+  .c-14-1 { animation-delay: 0.275s; transform-origin: center; }
+  .c-14-2 { animation-delay: 0.29s; transform-origin: center; }
+  .c-14-3 { animation-delay: 0.305s; transform-origin: center; }
+  .c-14-4 { animation-delay: 0.32s; transform-origin: center; }
+  .c-14-5 { animation-delay: 0.335s; transform-origin: center; }
+  .c-14-6 { animation-delay: 0.35s; transform-origin: center; }
+  .c-15-0 { animation-delay: 0.275s; transform-origin: center; }
+  .c-15-1 { animation-delay: 0.29s; transform-origin: center; }
+  .c-15-2 { animation-delay: 0.305s; transform-origin: center; }
+  .c-15-3 { animation-delay: 0.32s; transform-origin: center; }
+  .c-15-4 { animation-delay: 0.335s; transform-origin: center; }
+  .c-15-5 { animation-delay: 0.35s; transform-origin: center; }
+  .c-15-6 { animation-delay: 0.365s; transform-origin: center; }
+  .c-16-0 { animation-delay: 0.29s; transform-origin: center; }
+  .c-16-1 { animation-delay: 0.305s; transform-origin: center; }
+  .c-16-2 { animation-delay: 0.32s; transform-origin: center; }
+  .c-16-3 { animation-delay: 0.335s; transform-origin: center; }
+  .c-16-4 { animation-delay: 0.35s; transform-origin: center; }
+  .c-16-5 { animation-delay: 0.365s; transform-origin: center; }
+  .c-16-6 { animation-delay: 0.38s; transform-origin: center; }
+  .c-17-0 { animation-delay: 0.305s; transform-origin: center; }
+  .c-17-1 { animation-delay: 0.32s; transform-origin: center; }
+  .c-17-2 { animation-delay: 0.335s; transform-origin: center; }
+  .c-17-3 { animation-delay: 0.35s; transform-origin: center; }
+  .c-17-4 { animation-delay: 0.365s; transform-origin: center; }
+  .c-17-5 { animation-delay: 0.38s; transform-origin: center; }
+  .c-17-6 { animation-delay: 0.395s; transform-origin: center; }
+  .c-18-0 { animation-delay: 0.32s; transform-origin: center; }
+  .c-18-1 { animation-delay: 0.335s; transform-origin: center; }
+  .c-18-2 { animation-delay: 0.35s; transform-origin: center; }
+  .c-18-3 { animation-delay: 0.365s; transform-origin: center; }
+  .c-18-4 { animation-delay: 0.38s; transform-origin: center; }
+  .c-18-5 { animation-delay: 0.395s; transform-origin: center; }
+  .c-18-6 { animation-delay: 0.41s; transform-origin: center; }
+  .c-19-0 { animation-delay: 0.335s; transform-origin: center; }
+  .c-19-1 { animation-delay: 0.35s; transform-origin: center; }
+  .c-19-2 { animation-delay: 0.365s; transform-origin: center; }
+  .c-19-3 { animation-delay: 0.38s; transform-origin: center; }
+  .c-19-4 { animation-delay: 0.395s; transform-origin: center; }
+  .c-19-5 { animation-delay: 0.41s; transform-origin: center; }
+  .c-19-6 { animation-delay: 0.425s; transform-origin: center; }
+  .c-20-0 { animation-delay: 0.35s; transform-origin: center; }
+  .c-20-1 { animation-delay: 0.365s; transform-origin: center; }
+  .c-20-2 { animation-delay: 0.38s; transform-origin: center; }
+  .c-20-3 { animation-delay: 0.395s; transform-origin: center; }
+  .c-20-4 { animation-delay: 0.41s; transform-origin: center; }
+  .c-20-5 { animation-delay: 0.425s; transform-origin: center; }
+  .c-20-6 { animation-delay: 0.44s; transform-origin: center; }
+  .c-21-0 { animation-delay: 0.365s; transform-origin: center; }
+  .c-21-1 { animation-delay: 0.38s; transform-origin: center; }
+  .c-21-2 { animation-delay: 0.395s; transform-origin: center; }
+  .c-21-3 { animation-delay: 0.41s; transform-origin: center; }
+  .c-21-4 { animation-delay: 0.425s; transform-origin: center; }
+  .c-21-5 { animation-delay: 0.44s; transform-origin: center; }
+  .c-21-6 { animation-delay: 0.455s; transform-origin: center; }
+  .c-22-0 { animation-delay: 0.38s; transform-origin: center; }
+  .c-22-1 { animation-delay: 0.395s; transform-origin: center; }
+  .c-22-2 { animation-delay: 0.41s; transform-origin: center; }
+  .c-22-3 { animation-delay: 0.425s; transform-origin: center; }
+  .c-22-4 { animation-delay: 0.44s; transform-origin: center; }
+  .c-22-5 { animation-delay: 0.455s; transform-origin: center; }
+  .c-22-6 { animation-delay: 0.47s; transform-origin: center; }
+  .c-23-0 { animation-delay: 0.395s; transform-origin: center; }
+  .c-23-1 { animation-delay: 0.41s; transform-origin: center; }
+  .c-23-2 { animation-delay: 0.425s; transform-origin: center; }
+  .c-23-3 { animation-delay: 0.44s; transform-origin: center; }
+  .c-23-4 { animation-delay: 0.455s; transform-origin: center; }
+  .c-23-5 { animation-delay: 0.47s; transform-origin: center; }
+  .c-23-6 { animation-delay: 0.485s; transform-origin: center; }
+  .c-24-0 { animation-delay: 0.41s; transform-origin: center; }
+  .c-24-1 { animation-delay: 0.425s; transform-origin: center; }
+  .c-24-2 { animation-delay: 0.44s; transform-origin: center; }
+  .c-24-3 { animation-delay: 0.455s; transform-origin: center; }
+  .c-24-4 { animation-delay: 0.47s; transform-origin: center; }
+  .c-24-5 { animation-delay: 0.485s; transform-origin: center; }
+  .c-24-6 { animation-delay: 0.5s; transform-origin: center; }
+  .c-25-0 { animation-delay: 0.425s; transform-origin: center; }
+  .c-25-1 { animation-delay: 0.44s; transform-origin: center; }
+  .c-25-2 { animation-delay: 0.455s; transform-origin: center; }
+  .c-25-3 { animation-delay: 0.47s; transform-origin: center; }
+  .c-25-4 { animation-delay: 0.485s; transform-origin: center; }
+  .c-25-5 { animation-delay: 0.5s; transform-origin: center; }
+  .c-25-6 { animation-delay: 0.515s; transform-origin: center; }
+  .c-26-0 { animation-delay: 0.44s; transform-origin: center; }
+  .c-26-1 { animation-delay: 0.455s; transform-origin: center; }
+  .c-26-2 { animation-delay: 0.47s; transform-origin: center; }
+  .c-26-3 { animation-delay: 0.485s; transform-origin: center; }
+  .c-26-4 { animation-delay: 0.5s; transform-origin: center; }
+  .c-26-5 { animation-delay: 0.515s; transform-origin: center; }
+  .c-26-6 { animation-delay: 0.53s; transform-origin: center; }
+  .c-27-0 { animation-delay: 0.455s; transform-origin: center; }
+  .c-27-1 { animation-delay: 0.47s; transform-origin: center; }
+  .c-27-2 { animation-delay: 0.485s; transform-origin: center; }
+  .c-27-3 { animation-delay: 0.5s; transform-origin: center; }
+  .c-27-4 { animation-delay: 0.515s; transform-origin: center; }
+  .c-27-5 { animation-delay: 0.53s; transform-origin: center; }
+  .c-27-6 { animation-delay: 0.545s; transform-origin: center; }
+  .c-28-0 { animation-delay: 0.47s; transform-origin: center; }
+  .c-28-1 { animation-delay: 0.485s; transform-origin: center; }
+  .c-28-2 { animation-delay: 0.5s; transform-origin: center; }
+  .c-28-3 { animation-delay: 0.515s; transform-origin: center; }
+  .c-28-4 { animation-delay: 0.53s; transform-origin: center; }
+  .c-28-5 { animation-delay: 0.545s; transform-origin: center; }
+  .c-28-6 { animation-delay: 0.56s; transform-origin: center; }
+  .c-29-0 { animation-delay: 0.485s; transform-origin: center; }
+  .c-29-1 { animation-delay: 0.5s; transform-origin: center; }
+  .c-29-2 { animation-delay: 0.515s; transform-origin: center; }
+  .c-29-3 { animation-delay: 0.53s; transform-origin: center; }
+  .c-29-4 { animation-delay: 0.545s; transform-origin: center; }
+  .c-29-5 { animation-delay: 0.56s; transform-origin: center; }
+  .c-29-6 { animation-delay: 0.575s; transform-origin: center; }
+  .c-30-0 { animation-delay: 0.5s; transform-origin: center; }
+  .c-30-1 { animation-delay: 0.515s; transform-origin: center; }
+  .c-30-2 { animation-delay: 0.53s; transform-origin: center; }
+  .c-30-3 { animation-delay: 0.545s; transform-origin: center; }
+  .c-30-4 { animation-delay: 0.56s; transform-origin: center; }
+  .c-30-5 { animation-delay: 0.575s; transform-origin: center; }
+  .c-30-6 { animation-delay: 0.59s; transform-origin: center; }
+  .c-31-0 { animation-delay: 0.515s; transform-origin: center; }
+  .c-31-1 { animation-delay: 0.53s; transform-origin: center; }
+  .c-31-2 { animation-delay: 0.545s; transform-origin: center; }
+  .c-31-3 { animation-delay: 0.56s; transform-origin: center; }
+  .c-31-4 { animation-delay: 0.575s; transform-origin: center; }
+  .c-31-5 { animation-delay: 0.59s; transform-origin: center; }
+  .c-31-6 { animation-delay: 0.605s; transform-origin: center; }
+  .c-32-0 { animation-delay: 0.53s; transform-origin: center; }
+  .c-32-1 { animation-delay: 0.545s; transform-origin: center; }
+  .c-32-2 { animation-delay: 0.56s; transform-origin: center; }
+  .c-32-3 { animation-delay: 0.575s; transform-origin: center; }
+  .c-32-4 { animation-delay: 0.59s; transform-origin: center; }
+  .c-32-5 { animation-delay: 0.605s; transform-origin: center; }
+  .c-32-6 { animation-delay: 0.62s; transform-origin: center; }
+  .c-33-0 { animation-delay: 0.545s; transform-origin: center; }
+  .c-33-1 { animation-delay: 0.56s; transform-origin: center; }
+  .c-33-2 { animation-delay: 0.575s; transform-origin: center; }
+  .c-33-3 { animation-delay: 0.59s; transform-origin: center; }
+  .c-33-4 { animation-delay: 0.605s; transform-origin: center; }
+  .c-33-5 { animation-delay: 0.62s; transform-origin: center; }
+  .c-33-6 { animation-delay: 0.635s; transform-origin: center; }
+  .c-34-0 { animation-delay: 0.56s; transform-origin: center; }
+  .c-34-1 { animation-delay: 0.575s; transform-origin: center; }
+  .c-34-2 { animation-delay: 0.59s; transform-origin: center; }
+  .c-34-3 { animation-delay: 0.605s; transform-origin: center; }
+  .c-34-4 { animation-delay: 0.62s; transform-origin: center; }
+  .c-34-5 { animation-delay: 0.635s; transform-origin: center; }
+  .c-34-6 { animation-delay: 0.65s; transform-origin: center; }
+  .c-35-0 { animation-delay: 0.575s; transform-origin: center; }
+  .c-35-1 { animation-delay: 0.59s; transform-origin: center; }
+  .c-35-2 { animation-delay: 0.605s; transform-origin: center; }
+  .c-35-3 { animation-delay: 0.62s; transform-origin: center; }
+  .c-35-4 { animation-delay: 0.635s; transform-origin: center; }
+  .c-35-5 { animation-delay: 0.65s; transform-origin: center; }
+  .c-35-6 { animation-delay: 0.665s; transform-origin: center; }
+  .c-36-0 { animation-delay: 0.59s; transform-origin: center; }
+  .c-36-1 { animation-delay: 0.605s; transform-origin: center; }
+  .c-36-2 { animation-delay: 0.62s; transform-origin: center; }
+  .c-36-3 { animation-delay: 0.635s; transform-origin: center; }
+  .c-36-4 { animation-delay: 0.65s; transform-origin: center; }
+  .c-36-5 { animation-delay: 0.665s; transform-origin: center; }
+  .c-36-6 { animation-delay: 0.68s; transform-origin: center; }
+  .c-37-0 { animation-delay: 0.605s; transform-origin: center; }
+  .c-37-1 { animation-delay: 0.62s; transform-origin: center; }
+  .c-37-2 { animation-delay: 0.635s; transform-origin: center; }
+  .c-37-3 { animation-delay: 0.65s; transform-origin: center; }
+  .c-37-4 { animation-delay: 0.665s; transform-origin: center; }
+  .c-37-5 { animation-delay: 0.68s; transform-origin: center; }
+  .c-37-6 { animation-delay: 0.695s; transform-origin: center; }
+  .c-38-0 { animation-delay: 0.62s; transform-origin: center; }
+  .c-38-1 { animation-delay: 0.635s; transform-origin: center; }
+  .c-38-2 { animation-delay: 0.65s; transform-origin: center; }
+  .c-38-3 { animation-delay: 0.665s; transform-origin: center; }
+  .c-38-4 { animation-delay: 0.68s; transform-origin: center; }
+  .c-38-5 { animation-delay: 0.695s; transform-origin: center; }
+  .c-38-6 { animation-delay: 0.71s; transform-origin: center; }
+  .c-39-0 { animation-delay: 0.635s; transform-origin: center; }
+  .c-39-1 { animation-delay: 0.65s; transform-origin: center; }
+  .c-39-2 { animation-delay: 0.665s; transform-origin: center; }
+  .c-39-3 { animation-delay: 0.68s; transform-origin: center; }
+  .c-39-4 { animation-delay: 0.695s; transform-origin: center; }
+  .c-39-5 { animation-delay: 0.71s; transform-origin: center; }
+  .c-39-6 { animation-delay: 0.725s; transform-origin: center; }
+  .c-40-0 { animation-delay: 0.65s; transform-origin: center; }
+  .c-40-1 { animation-delay: 0.665s; transform-origin: center; }
+  .c-40-2 { animation-delay: 0.68s; transform-origin: center; }
+  .c-40-3 { animation-delay: 0.695s; transform-origin: center; }
+  .c-40-4 { animation-delay: 0.71s; transform-origin: center; }
+  .c-40-5 { animation-delay: 0.725s; transform-origin: center; }
+  .c-40-6 { animation-delay: 0.74s; transform-origin: center; }
+  .c-41-0 { animation-delay: 0.665s; transform-origin: center; }
+  .c-41-1 { animation-delay: 0.68s; transform-origin: center; }
+  .c-41-2 { animation-delay: 0.695s; transform-origin: center; }
+  .c-41-3 { animation-delay: 0.71s; transform-origin: center; }
+  .c-41-4 { animation-delay: 0.725s; transform-origin: center; }
+  .c-41-5 { animation-delay: 0.74s; transform-origin: center; }
+  .c-41-6 { animation-delay: 0.755s; transform-origin: center; }
+  .c-42-0 { animation-delay: 0.68s; transform-origin: center; }
+  .c-42-1 { animation-delay: 0.695s; transform-origin: center; }
+  .c-42-2 { animation-delay: 0.71s; transform-origin: center; }
+  .c-42-3 { animation-delay: 0.725s; transform-origin: center; }
+  .c-42-4 { animation-delay: 0.74s; transform-origin: center; }
+  .c-42-5 { animation-delay: 0.755s; transform-origin: center; }
+  .c-42-6 { animation-delay: 0.77s; transform-origin: center; }
+  .c-43-0 { animation-delay: 0.695s; transform-origin: center; }
+  .c-43-1 { animation-delay: 0.71s; transform-origin: center; }
+  .c-43-2 { animation-delay: 0.725s; transform-origin: center; }
+  .c-43-3 { animation-delay: 0.74s; transform-origin: center; }
+  .c-43-4 { animation-delay: 0.755s; transform-origin: center; }
+  .c-43-5 { animation-delay: 0.77s; transform-origin: center; }
+  .c-43-6 { animation-delay: 0.785s; transform-origin: center; }
+  .c-44-0 { animation-delay: 0.71s; transform-origin: center; }
+  .c-44-1 { animation-delay: 0.725s; transform-origin: center; }
+  .c-44-2 { animation-delay: 0.74s; transform-origin: center; }
+  .c-44-3 { animation-delay: 0.755s; transform-origin: center; }
+  .c-44-4 { animation-delay: 0.77s; transform-origin: center; }
+  .c-44-5 { animation-delay: 0.785s; transform-origin: center; }
+  .c-44-6 { animation-delay: 0.8s; transform-origin: center; }
+  .c-45-0 { animation-delay: 0.725s; transform-origin: center; }
+  .c-45-1 { animation-delay: 0.74s; transform-origin: center; }
+  .c-45-2 { animation-delay: 0.755s; transform-origin: center; }
+  .c-45-3 { animation-delay: 0.77s; transform-origin: center; }
+  .c-45-4 { animation-delay: 0.785s; transform-origin: center; }
+  .c-45-5 { animation-delay: 0.8s; transform-origin: center; }
+  .c-45-6 { animation-delay: 0.815s; transform-origin: center; }
+  .c-46-0 { animation-delay: 0.74s; transform-origin: center; }
+  .c-46-1 { animation-delay: 0.755s; transform-origin: center; }
+  .c-46-2 { animation-delay: 0.77s; transform-origin: center; }
+  .c-46-3 { animation-delay: 0.785s; transform-origin: center; }
+  .c-46-4 { animation-delay: 0.8s; transform-origin: center; }
+  .c-46-5 { animation-delay: 0.815s; transform-origin: center; }
+  .c-46-6 { animation-delay: 0.83s; transform-origin: center; }
+  .c-47-0 { animation-delay: 0.755s; transform-origin: center; }
+  .c-47-1 { animation-delay: 0.77s; transform-origin: center; }
+  .c-47-2 { animation-delay: 0.785s; transform-origin: center; }
+  .c-47-3 { animation-delay: 0.8s; transform-origin: center; }
+  .c-47-4 { animation-delay: 0.815s; transform-origin: center; }
+  .c-47-5 { animation-delay: 0.83s; transform-origin: center; }
+  .c-47-6 { animation-delay: 0.845s; transform-origin: center; }
+  .c-48-0 { animation-delay: 0.77s; transform-origin: center; }
+  .c-48-1 { animation-delay: 0.785s; transform-origin: center; }
+  .c-48-2 { animation-delay: 0.8s; transform-origin: center; }
+  .c-48-3 { animation-delay: 0.815s; transform-origin: center; }
+  .c-48-4 { animation-delay: 0.83s; transform-origin: center; }
+  .c-48-5 { animation-delay: 0.845s; transform-origin: center; }
+  .c-48-6 { animation-delay: 0.86s; transform-origin: center; }
+  .c-49-0 { animation-delay: 0.785s; transform-origin: center; }
+  .c-49-1 { animation-delay: 0.8s; transform-origin: center; }
+  .c-49-2 { animation-delay: 0.815s; transform-origin: center; }
+  .c-49-3 { animation-delay: 0.83s; transform-origin: center; }
+  .c-49-4 { animation-delay: 0.845s; transform-origin: center; }
+  .c-49-5 { animation-delay: 0.86s; transform-origin: center; }
+  .c-49-6 { animation-delay: 0.875s; transform-origin: center; }
+  .c-50-0 { animation-delay: 0.8s; transform-origin: center; }
+  .c-50-1 { animation-delay: 0.815s; transform-origin: center; }
+  .c-50-2 { animation-delay: 0.83s; transform-origin: center; }
+  .c-50-3 { animation-delay: 0.845s; transform-origin: center; }
+  .c-50-4 { animation-delay: 0.86s; transform-origin: center; }
+  .c-50-5 { animation-delay: 0.875s; transform-origin: center; }
+  .c-50-6 { animation-delay: 0.89s; transform-origin: center; }
+  .c-51-0 { animation-delay: 0.815s; transform-origin: center; }
+  .c-51-1 { animation-delay: 0.83s; transform-origin: center; }
+  .c-51-2 { animation-delay: 0.845s; transform-origin: center; }
+  .c-51-3 { animation-delay: 0.86s; transform-origin: center; }
+  .c-51-4 { animation-delay: 0.875s; transform-origin: center; }
+  .c-51-5 { animation-delay: 0.89s; transform-origin: center; }
+  .c-51-6 { animation-delay: 0.905s; transform-origin: center; }
+  .c-52-0 { animation-delay: 0.83s; transform-origin: center; }
+  .c-52-1 { animation-delay: 0.845s; transform-origin: center; }
+  .c-52-2 { animation-delay: 0.86s; transform-origin: center; }
+  .c-52-3 { animation-delay: 0.875s; transform-origin: center; }
+  .c-52-4 { animation-delay: 0.89s; transform-origin: center; }
+  .c-52-5 { animation-delay: 0.905s; transform-origin: center; }
+  .c-52-6 { animation-delay: 0.92s; transform-origin: center; }
+</style>
+<rect class="bg" width="860" height="200" />
+<circle class="header-dot" cx="20" cy="18" r="5" fill="#ff5f56" />
+<circle class="header-dot" cx="35" cy="18" r="5" fill="#ffbd2e" />
+<circle class="header-dot" cx="50" cy="18" r="5" fill="#27c93f" />
+<text class="title" x="430" y="22" text-anchor="middle">sahil@github ~ ./contributions.sh</text>
+<line x1="0" y1="34" x2="860" y2="34" stroke="#30363d" stroke-width="1" />
+<g transform="translate(35, 50)">
+  <rect class="day-box c-0-0" x="0.0" y="0.0" width="11" height="11" fill="#006d32" />
+  <rect class="day-box c-0-1" x="0.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-0-2" x="0.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-0-3" x="0.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-0-4" x="0.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-0-5" x="0.0" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-0-6" x="0.0" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-1-0" x="14.5" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-1-1" x="14.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-1-2" x="14.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-1-3" x="14.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-1-4" x="14.5" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-1-5" x="14.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-1-6" x="14.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-2-0" x="29.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-2-1" x="29.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-2-2" x="29.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-2-3" x="29.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-2-4" x="29.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-2-5" x="29.0" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-2-6" x="29.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-3-0" x="43.5" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-3-1" x="43.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-3-2" x="43.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-3-3" x="43.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-3-4" x="43.5" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-3-5" x="43.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-3-6" x="43.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-4-0" x="58.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-4-1" x="58.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-4-2" x="58.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-4-3" x="58.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-4-4" x="58.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-4-5" x="58.0" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-4-6" x="58.0" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-5-0" x="72.5" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-5-1" x="72.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-5-2" x="72.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-5-3" x="72.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-5-4" x="72.5" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-5-5" x="72.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-5-6" x="72.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-6-0" x="87.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-6-1" x="87.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-6-2" x="87.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-6-3" x="87.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-6-4" x="87.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-6-5" x="87.0" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-6-6" x="87.0" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-7-0" x="101.5" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-7-1" x="101.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-7-2" x="101.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-7-3" x="101.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-7-4" x="101.5" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-7-5" x="101.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-7-6" x="101.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-8-0" x="116.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-8-1" x="116.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-8-2" x="116.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-8-3" x="116.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-8-4" x="116.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-8-5" x="116.0" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-8-6" x="116.0" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-9-0" x="130.5" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-9-1" x="130.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-9-2" x="130.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-9-3" x="130.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-9-4" x="130.5" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-9-5" x="130.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-9-6" x="130.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-10-0" x="145.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-10-1" x="145.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-10-2" x="145.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-10-3" x="145.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-10-4" x="145.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-10-5" x="145.0" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-10-6" x="145.0" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-11-0" x="159.5" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-11-1" x="159.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-11-2" x="159.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-11-3" x="159.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-11-4" x="159.5" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-11-5" x="159.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-11-6" x="159.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-12-0" x="174.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-12-1" x="174.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-12-2" x="174.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-12-3" x="174.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-12-4" x="174.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-12-5" x="174.0" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-12-6" x="174.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-13-0" x="188.5" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-13-1" x="188.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-13-2" x="188.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-13-3" x="188.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-13-4" x="188.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-13-5" x="188.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-13-6" x="188.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-14-0" x="203.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-14-1" x="203.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-14-2" x="203.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-14-3" x="203.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-14-4" x="203.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-14-5" x="203.0" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-14-6" x="203.0" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-15-0" x="217.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-15-1" x="217.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-15-2" x="217.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-15-3" x="217.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-15-4" x="217.5" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-15-5" x="217.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-15-6" x="217.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-16-0" x="232.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-16-1" x="232.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-16-2" x="232.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-16-3" x="232.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-16-4" x="232.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-16-5" x="232.0" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-16-6" x="232.0" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-17-0" x="246.5" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-17-1" x="246.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-17-2" x="246.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-17-3" x="246.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-17-4" x="246.5" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-17-5" x="246.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-17-6" x="246.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-18-0" x="261.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-18-1" x="261.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-18-2" x="261.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-18-3" x="261.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-18-4" x="261.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-18-5" x="261.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-18-6" x="261.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-19-0" x="275.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-19-1" x="275.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-19-2" x="275.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-19-3" x="275.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-19-4" x="275.5" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-19-5" x="275.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-19-6" x="275.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-20-0" x="290.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-20-1" x="290.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-20-2" x="290.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-20-3" x="290.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-20-4" x="290.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-20-5" x="290.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-20-6" x="290.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-21-0" x="304.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-21-1" x="304.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-21-2" x="304.5" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-21-3" x="304.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-21-4" x="304.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-21-5" x="304.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-21-6" x="304.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-22-0" x="319.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-22-1" x="319.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-22-2" x="319.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-22-3" x="319.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-22-4" x="319.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-22-5" x="319.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-22-6" x="319.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-23-0" x="333.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-23-1" x="333.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-23-2" x="333.5" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-23-3" x="333.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-23-4" x="333.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-23-5" x="333.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-23-6" x="333.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-24-0" x="348.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-24-1" x="348.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-24-2" x="348.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-24-3" x="348.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-24-4" x="348.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-24-5" x="348.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-24-6" x="348.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-25-0" x="362.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-25-1" x="362.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-25-2" x="362.5" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-25-3" x="362.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-25-4" x="362.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-25-5" x="362.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-25-6" x="362.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-26-0" x="377.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-26-1" x="377.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-26-2" x="377.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-26-3" x="377.0" y="43.5" width="11" height="11" fill="#006d32" />
+  <rect class="day-box c-26-4" x="377.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-26-5" x="377.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-26-6" x="377.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-27-0" x="391.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-27-1" x="391.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-27-2" x="391.5" y="29.0" width="11" height="11" fill="#006d32" />
+  <rect class="day-box c-27-3" x="391.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-27-4" x="391.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-27-5" x="391.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-27-6" x="391.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-28-0" x="406.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-28-1" x="406.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-28-2" x="406.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-28-3" x="406.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-28-4" x="406.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-28-5" x="406.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-28-6" x="406.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-29-0" x="420.5" y="0.0" width="11" height="11" fill="#006d32" />
+  <rect class="day-box c-29-1" x="420.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-29-2" x="420.5" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-29-3" x="420.5" y="43.5" width="11" height="11" fill="#26a641" />
+  <rect class="day-box c-29-4" x="420.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-29-5" x="420.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-29-6" x="420.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-30-0" x="435.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-30-1" x="435.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-30-2" x="435.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-30-3" x="435.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-30-4" x="435.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-30-5" x="435.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-30-6" x="435.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-31-0" x="449.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-31-1" x="449.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-31-2" x="449.5" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-31-3" x="449.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-31-4" x="449.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-31-5" x="449.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-31-6" x="449.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-32-0" x="464.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-32-1" x="464.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-32-2" x="464.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-32-3" x="464.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-32-4" x="464.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-32-5" x="464.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-32-6" x="464.0" y="87.0" width="11" height="11" fill="#39d353" />
+  <rect class="day-box c-33-0" x="478.5" y="0.0" width="11" height="11" fill="#006d32" />
+  <rect class="day-box c-33-1" x="478.5" y="14.5" width="11" height="11" fill="#006d32" />
+  <rect class="day-box c-33-2" x="478.5" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-33-3" x="478.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-33-4" x="478.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-33-5" x="478.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-33-6" x="478.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-34-0" x="493.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-34-1" x="493.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-34-2" x="493.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-34-3" x="493.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-34-4" x="493.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-34-5" x="493.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-34-6" x="493.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-35-0" x="507.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-35-1" x="507.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-35-2" x="507.5" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-35-3" x="507.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-35-4" x="507.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-35-5" x="507.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-35-6" x="507.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-36-0" x="522.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-36-1" x="522.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-36-2" x="522.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-36-3" x="522.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-36-4" x="522.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-36-5" x="522.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-36-6" x="522.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-37-0" x="536.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-37-1" x="536.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-37-2" x="536.5" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-37-3" x="536.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-37-4" x="536.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-37-5" x="536.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-37-6" x="536.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-38-0" x="551.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-38-1" x="551.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-38-2" x="551.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-38-3" x="551.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-38-4" x="551.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-38-5" x="551.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-38-6" x="551.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-39-0" x="565.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-39-1" x="565.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-39-2" x="565.5" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-39-3" x="565.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-39-4" x="565.5" y="58.0" width="11" height="11" fill="#39d353" />
+  <rect class="day-box c-39-5" x="565.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-39-6" x="565.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-40-0" x="580.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-40-1" x="580.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-40-2" x="580.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-40-3" x="580.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-40-4" x="580.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-40-5" x="580.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-40-6" x="580.0" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-41-0" x="594.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-41-1" x="594.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-41-2" x="594.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-41-3" x="594.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-41-4" x="594.5" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-41-5" x="594.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-41-6" x="594.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-42-0" x="609.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-42-1" x="609.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-42-2" x="609.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-42-3" x="609.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-42-4" x="609.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-42-5" x="609.0" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-42-6" x="609.0" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-43-0" x="623.5" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-43-1" x="623.5" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-43-2" x="623.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-43-3" x="623.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-43-4" x="623.5" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-43-5" x="623.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-43-6" x="623.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-44-0" x="638.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-44-1" x="638.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-44-2" x="638.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-44-3" x="638.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-44-4" x="638.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-44-5" x="638.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-44-6" x="638.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-45-0" x="652.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-45-1" x="652.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-45-2" x="652.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-45-3" x="652.5" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-45-4" x="652.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-45-5" x="652.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-45-6" x="652.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-46-0" x="667.0" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-46-1" x="667.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-46-2" x="667.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-46-3" x="667.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-46-4" x="667.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-46-5" x="667.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-46-6" x="667.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-47-0" x="681.5" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-47-1" x="681.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-47-2" x="681.5" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-47-3" x="681.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-47-4" x="681.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-47-5" x="681.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-47-6" x="681.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-48-0" x="696.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-48-1" x="696.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-48-2" x="696.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-48-3" x="696.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-48-4" x="696.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-48-5" x="696.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-48-6" x="696.0" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-49-0" x="710.5" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-49-1" x="710.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-49-2" x="710.5" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-49-3" x="710.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-49-4" x="710.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-49-5" x="710.5" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-49-6" x="710.5" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-50-0" x="725.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-50-1" x="725.0" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-50-2" x="725.0" y="29.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-50-3" x="725.0" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-50-4" x="725.0" y="58.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-50-5" x="725.0" y="72.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-50-6" x="725.0" y="87.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-51-0" x="739.5" y="0.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-51-1" x="739.5" y="14.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-51-2" x="739.5" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-51-3" x="739.5" y="43.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-51-4" x="739.5" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-51-5" x="739.5" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-51-6" x="739.5" y="87.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-52-0" x="754.0" y="0.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-52-1" x="754.0" y="14.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-52-2" x="754.0" y="29.0" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-52-3" x="754.0" y="43.5" width="11" height="11" fill="#161b22" />
+  <rect class="day-box c-52-4" x="754.0" y="58.0" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-52-5" x="754.0" y="72.5" width="11" height="11" fill="#0e4429" />
+  <rect class="day-box c-52-6" x="754.0" y="87.0" width="11" height="11" fill="#161b22" />
+</g>
+<g transform="translate(35, 182)">
+  <text class="stat-text" x="0" y="0"><tspan class="highlight">1,005</tspan> contributions in the last year &#183; Max Streak: <tspan class="highlight">145</tspan> days &#183; Current Streak: <tspan class="highlight">2</tspan> days</text>
+  <g transform="translate(645, -9)">
+    <text class="legend-text" x="0" y="8">Less</text>
+    <rect x="28" y="0" width="10" height="10" rx="2" fill="#161b22" />
+    <rect x="41" y="0" width="10" height="10" rx="2" fill="#0e4429" />
+    <rect x="54" y="0" width="10" height="10" rx="2" fill="#006d32" />
+    <rect x="67" y="0" width="10" height="10" rx="2" fill="#26a641" />
+    <rect x="80" y="0" width="10" height="10" rx="2" fill="#39d353" />
+    <text class="legend-text" x="96" y="8">More</text>
+  </g>
+</g>
+</svg>
