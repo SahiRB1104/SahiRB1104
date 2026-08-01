@@ -1,10 +1,11 @@
 import os
+import html
 from PIL import Image, ImageEnhance, ImageOps
 
 # Density ramp from bright (blank space) to dark (dense glyphs)
 RAMP = " .`:-=+*cs#%@"
 
-def photo_to_ascii(image_path, width=62):
+def photo_to_ascii(image_path, width=72):
     img = Image.open(image_path)
     
     # Calculate aspect ratio for monospace font cell (width:height ~ 1:1.9)
@@ -30,14 +31,12 @@ def photo_to_ascii(image_path, width=62):
             index = int((255 - pixel_val) / 255 * (num_chars - 1))
             char = RAMP[index]
             
-            # XML entity escaping
-            if char == "&": char = "&amp;"
-            elif char == "<": char = "&lt;"
-            elif char == ">": char = "&gt;"
-            elif char == '"': char = "&quot;"
-            elif char == "'": char = "&apos;"
-            elif char == " ": char = "&#160;"
-            row_chars.append(char)
+            # HTML / XML escaping
+            if char == " ":
+                char_str = "&#160;"
+            else:
+                char_str = html.escape(char)
+            row_chars.append(char_str)
         ascii_rows.append("".join(row_chars))
         
     return ascii_rows
@@ -46,15 +45,14 @@ def generate_ascii_svg(ascii_rows, output_path="ascii-portrait.svg"):
     num_rows = len(ascii_rows)
     max_cols = max(len(r) for r in ascii_rows)
     
-    svg_width = 410
-    svg_height = 340
+    svg_width = 430
+    svg_height = 370
     
-    font_size = 7.2
-    line_height = 8.2
-    char_width = 5.6
+    font_size = 7.5
+    line_height = 8.6
     
-    padding_x = 20
-    padding_y = 48
+    padding_x = 18
+    padding_y = 52
     
     svg = ['<?xml version="1.0" encoding="UTF-8"?>']
     svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {svg_width} {svg_height}" width="{svg_width}" height="{svg_height}">')
@@ -63,7 +61,7 @@ def generate_ascii_svg(ascii_rows, output_path="ascii-portrait.svg"):
         .bg { fill: #0d1117; rx: 10px; ry: 10px; stroke: #30363d; stroke-width: 1px; }
         .header-dot { rx: 50%; ry: 50%; }
         .title { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; fill: #8b949e; font-weight: 600; }
-        .ascii-text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 7.2px; fill: #58a6ff; white-space: pre; letter-spacing: 0px; }
+        .ascii-text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 7.5px; fill: #58a6ff; white-space: pre; letter-spacing: 0px; }
         .row { opacity: 0; animation: rowFadeIn 0.04s ease-out forwards; }
         @keyframes rowFadeIn {
             from { opacity: 0; transform: translateY(2px); }
@@ -72,7 +70,7 @@ def generate_ascii_svg(ascii_rows, output_path="ascii-portrait.svg"):
     ''')
     
     for i in range(num_rows):
-        delay = round(0.05 + i * 0.03, 3)
+        delay = round(0.04 + i * 0.025, 3)
         svg.append(f'  .row-{i} {{ animation-delay: {delay}s; }}')
         
     svg.append('</style>')
@@ -104,7 +102,7 @@ if __name__ == "__main__":
     input_photo = "photo.png"
     output_svg = "ascii-portrait.svg"
     if os.path.exists(input_photo):
-        rows = photo_to_ascii(input_photo, width=62)
+        rows = photo_to_ascii(input_photo, width=72)
         generate_ascii_svg(rows, output_svg)
     else:
         print(f"Error: {input_photo} not found!")
