@@ -22,27 +22,27 @@
 
 <br/>
 
-<!-- SECTION 1: IDENTITY & NEOFETCH -->
+<!-- SECTION 1: LIVE CONTRIBUTION HEATMAP (PLACED FIRST ABOVE WHOAMI) -->
+<div align="center">
+  <h3><code>sahil@github ~ $ ./contributions.sh</code></h3>
+  <img src="https://raw.githubusercontent.com/SahiRB1104/SahiRB1104/main/contrib-heatmap.svg" width="860" alt="Live Contribution Heatmap" />
+</div>
+
+<br/>
+
+<!-- SECTION 2: IDENTITY & NEOFETCH -->
 <div align="center">
   <h3><code>sahil@github ~ $ whoami</code></h3>
   <table border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td valign="top" align="center">
-        <img src="https://raw.githubusercontent.com/SahiRB1104/SahiRB1104/main/ascii-portrait.svg" width="410" alt="Sahil ASCII Portrait" />
+        <img src="https://raw.githubusercontent.com/SahiRB1104/SahiRB1104/main/ascii-portrait.svg" width="430" alt="Sahil ASCII Portrait" />
       </td>
       <td valign="top" align="center">
-        <img src="https://raw.githubusercontent.com/SahiRB1104/SahiRB1104/main/info-card.svg" width="410" alt="Sahil Terminal Info Card" />
+        <img src="https://raw.githubusercontent.com/SahiRB1104/SahiRB1104/main/info-card.svg" width="430" alt="Sahil Terminal Info Card" />
       </td>
     </tr>
   </table>
-</div>
-
-<br/>
-
-<!-- SECTION 2: LIVE CONTRIBUTION HEATMAP -->
-<div align="center">
-  <h3><code>sahil@github ~ $ ./contributions.sh</code></h3>
-  <img src="https://raw.githubusercontent.com/SahiRB1104/SahiRB1104/main/contrib-heatmap.svg" width="860" alt="Live Contribution Heatmap" />
 </div>
 
 <br/>
@@ -99,7 +99,7 @@
 <div align="center">
   <h3><code>sahil@github ~ $ ./stats.sh</code></h3>
   <p>
-    <img src="https://github-readme-stats.vercel.app/api?username=SahiRB1104&show_icons=true&theme=dark&hide_border=true&count_private=true" height="165" alt="GitHub Stats" />
+    <img src="https://github-readme-stats.vercel.app/api?username=SahiRB1104&theme=dark&hide_border=true" height="165" alt="GitHub Stats" />
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SahiRB1104&theme=dark&hide_border=true&layout=compact" height="165" alt="Top Languages" />
   </p>
   <p>
