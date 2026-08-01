@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 887 435" width="887" height="435">
+<style>
+
+        .bg { fill: #0d1117; rx: 10px; ry: 10px; stroke: #30363d; stroke-width: 1px; }
+        .header-dot { rx: 50%; ry: 50%; }
+        .title { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; fill: #8b949e; font-weight: 600; }
+        .ascii-text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 8.5px; fill: #58a6ff; white-space: pre; }
+        .row { opacity: 0; animation: rowFadeIn 0.05s ease-out forwards; }
+        @keyframes rowFadeIn {
+            from { opacity: 0; transform: translateY(2px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    
+  .row-0 { animation-delay: 0.0s; }
+  .row-1 { animation-delay: 0.035s; }
+  .row-2 { animation-delay: 0.07s; }
+  .row-3 { animation-delay: 0.105s; }
+  .row-4 { animation-delay: 0.14s; }
+  .row-5 { animation-delay: 0.175s; }
+  .row-6 { animation-delay: 0.21s; }
+  .row-7 { animation-delay: 0.245s; }
+  .row-8 { animation-delay: 0.28s; }
+  .row-9 { animation-delay: 0.315s; }
+  .row-10 { animation-delay: 0.35s; }
+  .row-11 { animation-delay: 0.385s; }
+  .row-12 { animation-delay: 0.42s; }
+  .row-13 { animation-delay: 0.455s; }
+  .row-14 { animation-delay: 0.49s; }
+  .row-15 { animation-delay: 0.525s; }
+  .row-16 { animation-delay: 0.56s; }
+  .row-17 { animation-delay: 0.595s; }
+  .row-18 { animation-delay: 0.63s; }
+  .row-19 { animation-delay: 0.665s; }
+  .row-20 { animation-delay: 0.7s; }
+  .row-21 { animation-delay: 0.735s; }
+  .row-22 { animation-delay: 0.77s; }
+  .row-23 { animation-delay: 0.805s; }
+  .row-24 { animation-delay: 0.84s; }
+  .row-25 { animation-delay: 0.875s; }
+  .row-26 { animation-delay: 0.91s; }
+  .row-27 { animation-delay: 0.945s; }
+  .row-28 { animation-delay: 0.98s; }
+  .row-29 { animation-delay: 1.015s; }
+  .row-30 { animation-delay: 1.05s; }
+  .row-31 { animation-delay: 1.085s; }
+  .row-32 { animation-delay: 1.12s; }
+  .row-33 { animation-delay: 1.155s; }
+  .row-34 { animation-delay: 1.19s; }
+  .row-35 { animation-delay: 1.225s; }
+  .row-36 { animation-delay: 1.26s; }
+</style>
+<rect class="bg" width="887" height="435" />
+<circle class="header-dot" cx="20" cy="18" r="5" fill="#ff5f56" />
+<circle class="header-dot" cx="35" cy="18" r="5" fill="#ffbd2e" />
+<circle class="header-dot" cx="50" cy="18" r="5" fill="#27c93f" />
+<text class="title" x="443" y="22" text-anchor="middle">sahil_portrait.ascii</text>
+<line x1="0" y1="34" x2="887" y2="34" stroke="#30363d" stroke-width="1" />
+<g class="ascii-text" transform="translate(20, 45)">
+  <text class="row row-0" x="0" y="0">@@@@@@@@@@@@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@@@@@@@@@</text>
+  <text class="row row-1" x="0" y="10">@@@@@@@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@@@@@</text>
+  <text class="row row-2" x="0" y="20">@@@@@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@@@</text>
+  <text class="row row-3" x="0" y="30">@@@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@</text>
+  <text class="row row-4" x="0" y="40">@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#######%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@</text>
+  <text class="row row-5" x="0" y="50">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#sscc**cscscss#%%%#%%%%%%%%%%%%%%%%%%%%%%%%%%</text>
+  <text class="row row-6" x="0" y="60">%%%%%%%%%%%%%%%%%%%%%%%%%%%%#%%sc###%%##s%###ssss#%#%#%%%%%%%%%%%%%%%%%%%%%%%%</text>
+  <text class="row row-7" x="0" y="70">%%%%%%%%%%%%%%%%%%%%########%%##@@@@@@@@@@@@@@@@%%%%#####%##%#%%%%%%%%%%%%%%%%</text>
+  <text class="row row-8" x="0" y="80">%%%%%%%%%%%%%%%%%############%%@@@%c+-:-=:```-*#@@s##########%%%%%%%%%%%%%%%%%</text>
+  <text class="row row-9" x="0" y="90">%%%%%%%%%%%%%%###############%@@@%+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#%#################%%%%%%%%%%%</text>
+  <text class="row row-10" x="0" y="100">%%%%%%%%%%%%##%##############%%%%c:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;s%%##############%%%%%%%%%%%%%</text>
+  <text class="row row-11" x="0" y="110">%%%%%%%%%%###################s#s=:*s###c`&#160;:+**=`-#%##################%%%%%%%%%</text>
+  <text class="row row-12" x="0" y="120">%%%%%%%%%%%################%c--+`.:==:-+&#160;&#160;`*+++`.`=##################%%%%%%%%%</text>
+  <text class="row row-13" x="0" y="130">%%%%%%%%%##################%c-*=.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`%##################%%%%%%%%</text>
+  <text class="row row-14" x="0" y="140">%%%%%%%%%###################%-:*:`&#160;&#160;&#160;&#160;.-=``&#160;&#160;&#160;&#160;&#160;&#160;&#160;s%###################%%%%%%%</text>
+  <text class="row row-15" x="0" y="150">%%%%%%%%%####################scs*-`&#160;.=+-`.`-=&#160;&#160;&#160;:+%####################%%%%%%%</text>
+  <text class="row row-16" x="0" y="160">%%%%%%%%######################%##c+-:..```&#160;&#160;..&#160;-s%#####################%%%%%%%</text>
+  <text class="row row-17" x="0" y="170">%%%%%%%%######################%+c@%%#+`...&#160;.*cc#######################%%%%%%%%</text>
+  <text class="row row-18" x="0" y="180">%%%%%%%%#######################&#160;&#160;*#%@@%ssss%#*#######################%%%%%%%%%</text>
+  <text class="row row-19" x="0" y="190">%%%%%%%%%###################sc#%:&#160;&#160;-+c#%#cc+-`c%#####################%%%%%%%%%</text>
+  <text class="row row-20" x="0" y="200">%%%%%%%%%############%%#sc*cc#%%@c&#160;&#160;&#160;&#160;.`--:`.&#160;`#s####################%%%%%%%%%</text>
+  <text class="row row-21" x="0" y="210">%%%%%%%%%%#######%%##c*+*cs######@%`&#160;&#160;&#160;&#160;&#160;&#160;.:.&#160;&#160;%+css#################%%%%%%%%%</text>
+  <text class="row row-22" x="0" y="220">%%%%%%%%%%%###%%#sc*++*cs####%%%%#%@=&#160;&#160;&#160;.%%##c&#160;`%*csccss############%%%%%%%%%%</text>
+  <text class="row row-23" x="0" y="230">%%%%%%%%%%%%%%###sssss########%%%###@s&#160;&#160;&#160;`s@%*&#160;&#160;:%ccssscs#########%##%%%%%%%%%</text>
+  <text class="row row-24" x="0" y="240">%%%%%%%%%%%%%#%@@@@@%%%########%%%###@%&#160;&#160;&#160;&#160;@%s&#160;&#160;&#160;*#csss#s########%%%%%%%%%%%%%</text>
+  <text class="row row-25" x="0" y="250">%%%%%%%%%%%%#%@@@%%%%%%%%########%%###%@`&#160;&#160;%##c&#160;&#160;&#160;#sssss#%########%%%%%%%%%%%%</text>
+  <text class="row row-26" x="0" y="260">%%%%%%%%%%%%%@%%%%%@%%%%%%########%%%##%@:&#160;+#s%*&#160;&#160;`@ss###%%######%%%%%%%%%%%%%</text>
+  <text class="row row-27" x="0" y="270">%%%%%%%%%%%%#%%@@%%%%%%%%%%%#%%%####%%##%@:&#160;#ss%:&#160;&#160;##s####%######%%%%%%%%%%%%%</text>
+  <text class="row row-28" x="0" y="280">%%%%%%%%%%%##%@@@%%%%%%%%%@%%%%%%%###%%%#%@-=%###&#160;&#160;=%###%%%%#%%%%%%%%%%%%%%%%%</text>
+  <text class="row row-29" x="0" y="290">%%%%%%%%%%%#%@@@@@@@@%%%%%@@%%%%%%%%###%%%%@s###%=&#160;`@##%%%%%%%%%%%%%%%%%%%%%%%</text>
+  <text class="row row-30" x="0" y="300">%%%%%%%%%%#%@@@@@@@%%%%@@@@@@%%%%%%%%%%%%%%%%#####&#160;:@#%%%%%%%%%%%%%%%%%%%%%%%%</text>
+  <text class="row row-31" x="0" y="310">%%%%%%%%%%%@@@@@@@@@@@@@@@@@@@%%%%%%%%%%%%@%%%###@.-@#%%%%@%%%%%%%%%%%%%%%%%%@</text>
+  <text class="row row-32" x="0" y="320">@%%%%%%%%%@@@@@@@@@@%%%@@@@@@@@@@@%%%%%%%%%@%%%##@++@%%%%%@@%%%%%%%%%%%%%%%@@@</text>
+  <text class="row row-33" x="0" y="330">@@@@%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%@@%%#%##%%%@%@@@@%%%%%%%%%%%%%@@@@</text>
+  <text class="row row-34" x="0" y="340">@@@@@%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%@@%%%@@%%@@@@@@@%%%%%%%%%%%%@@@@@</text>
+  <text class="row row-35" x="0" y="350">@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@%%@@@%%@@%@@@@@@@@@%%%%%%%%@@@@@@@@</text>
+  <text class="row row-36" x="0" y="360">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%@@@%@@%@@@@@@@@@@%%%@@@@@@@@@@@@</text>
+</g>
+</svg>
