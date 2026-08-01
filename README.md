@@ -22,7 +22,7 @@
 
 <br/>
 
-<!-- SECTION 1: LIVE CONTRIBUTION HEATMAP (PLACED FIRST ABOVE WHOAMI) -->
+<!-- SECTION 1: LIVE CONTRIBUTION HEATMAP -->
 <div align="center">
   <h3><code>sahil@github ~ $ ./contributions.sh</code></h3>
   <img src="https://raw.githubusercontent.com/SahiRB1104/SahiRB1104/main/contrib-heatmap.svg" width="860" alt="Live Contribution Heatmap" />
@@ -99,8 +99,8 @@
 <div align="center">
   <h3><code>sahil@github ~ $ ./stats.sh</code></h3>
   <p>
-    <img src="https://github-readme-stats.vercel.app/api?username=SahiRB1104&theme=dark&hide_border=true" height="165" alt="GitHub Stats" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SahiRB1104&theme=dark&hide_border=true&layout=compact" height="165" alt="Top Languages" />
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=SahiRB1104&theme=dark&hide_border=true" height="165" alt="GitHub Stats" />
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=SahiRB1104&theme=dark&hide_border=true&layout=compact" height="165" alt="Top Languages" />
   </p>
   <p>
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=SahiRB1104&theme=dark&hide_border=true" height="165" alt="Streak Stats" />
