@@ -1,45 +1,10 @@
 {
   "username": "SahiRB1104",
-  "total_contributions": 1192,
+  "total_contributions": 1193,
   "current_streak": 38,
   "max_streak": 145,
-  "days_recorded": 371,
+  "days_recorded": 365,
   "days": [
-    {
-      "date": "2025-08-31",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-09-01",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-09-02",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-09-03",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-09-04",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-09-05",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-09-06",
-      "level": 0,
-      "count": 0
-    },
     {
       "date": "2025-09-07",
       "level": 0,
@@ -1858,7 +1823,12 @@
     {
       "date": "2026-09-05",
       "level": 3,
-      "count": 51
+      "count": 52
+    },
+    {
+      "date": "2026-09-06",
+      "level": 0,
+      "count": 0
     }
   ]
 }
